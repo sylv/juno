@@ -4,7 +4,7 @@
 > Juno does nothing correctly and is not ready for use even on funny little side projects.
 
 A *very* experimental RPC server for Rust that is compatible with tRPC.
-Inspired by [rspc](https://github.dev/specta-rs/rspc) and [tRPC](https://trpc.io/).
+Inspired by [rspc](https://github.com/specta-rs/rspc) and [tRPC](https://trpc.io/).
 
 ```rs
 #[rpc(query)]
