@@ -61,6 +61,7 @@ pub async fn main() {
 - Find a better name
 - Publish on crates.io probably
 - Handle state better
+- Handle responses/errors better
 - Offload as much as possible from the macro, it does way too much right now.
 - Figure out the best way to do auth
 - Support for batch requests
