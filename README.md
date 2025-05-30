@@ -59,6 +59,7 @@ pub async fn main() {
 # todo
 
 - Find a better name
+- Unregistered/unused RPC methods are not marked as unused
 - Publish on crates.io probably
 - Handle state better
 - Handle responses/errors better
