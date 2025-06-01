@@ -61,6 +61,7 @@ pub async fn main() {
 - Find a better name
 - Unregistered/unused RPC methods are not marked as unused
 - Publish on crates.io probably
+- `write_client()` only working with debug_assertions should be documented
 - Handle state better
 - Handle responses/errors better
 - Offload as much as possible from the macro, it does way too much right now.

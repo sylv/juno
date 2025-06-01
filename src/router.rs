@@ -87,7 +87,9 @@ impl<S1: Clone + Send + Sync + 'static> RpcRouter<S1> {
                 .framework_header("");
 
             let mut router_entries = Vec::new();
-            for route in self.handlers.values() {
+            let mut sorted_handlers: Vec<_> = self.handlers.iter().collect();
+            sorted_handlers.sort_by_key(|(name, _)| *name);
+            for (_name, route) in sorted_handlers {
                 let type_method = match route.rpc_type {
                     RpcType::Query => "query",
                     RpcType::Mutation => "mutation",
